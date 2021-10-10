@@ -29,6 +29,6 @@ object AppModule {
     @Provides
     @Singleton
     fun provideCoinRepository(api: CoinPaprikaApi): CoinRepository{
-        return CoinRepositoryImpl(api)
+        return CoinRepositoryImpl(api) as CoinRepository
     }
 }

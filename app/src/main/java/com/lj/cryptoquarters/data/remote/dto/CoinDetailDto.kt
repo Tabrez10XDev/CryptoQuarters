@@ -1,6 +1,7 @@
 package com.lj.cryptoquarters.data.remote.dto
 
 
+import android.util.Log
 import com.google.gson.annotations.SerializedName
 import com.lj.cryptoquarters.data.repository.CoinDetail
 
@@ -37,12 +38,13 @@ data class CoinDetailDto(
     val startedAt: String,
     val symbol: String,
     val tags: List<Tag>,
-    val team: List<TeamMembers>,
+    val team: List<TeamMember>,
     val type: String,
     val whitepaper: Whitepaper
 )
 
 fun CoinDetailDto.toCoinDetail(): CoinDetail{
+
     return CoinDetail(
         coinId = id,
         name = name,
