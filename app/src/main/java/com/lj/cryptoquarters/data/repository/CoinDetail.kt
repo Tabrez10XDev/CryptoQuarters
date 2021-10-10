@@ -1,6 +1,6 @@
 package com.lj.cryptoquarters.data.repository
 
-import com.lj.cryptoquarters.data.remote.dto.TeamMembers
+import com.lj.cryptoquarters.data.remote.dto.TeamMember
 
 data class CoinDetail(
     val coinId: String,
@@ -10,5 +10,5 @@ data class CoinDetail(
     val rank: Int,
     val isActive: Boolean,
     val tags: List<String>,
-    val team: List<TeamMembers>
+    val team: List<TeamMember>
 )
